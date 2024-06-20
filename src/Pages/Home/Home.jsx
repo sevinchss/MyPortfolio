@@ -61,7 +61,7 @@ const Home = () => {
             data-aos-duration="1000"
             className="flex flex-col gap-3 font-Raleway lg:w-[500px] lg:px-0 px-5  lg:pt-72 m-0 pt-56"
           >
-            <h1 className="text-6xl lg:w-[500px]   font-bold text-inf">
+            <h1 className="lg:text-6xl w-full text-5xl lg:w-[500px]   font-bold text-inf">
               {t("hero.h1")}
             </h1>
             <h1 className="lg:w-[500px] text-4xl m-0 text-type">
