@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <div
       name="portfolio"
-      className="bg-primary text-quotes w-full md:h-screen portfolio"
+      className="bg-primary text-quotes w-full h-full portfolio"
     >
       <div className="  p-4 mx-auto flex flex-col justify-center w-full h-full">
         <p className="py-8 text-center font-Raleway font-bold text-3xl mt-5">
@@ -56,7 +56,7 @@ const Projects = () => {
 
         <div
           data-aos="zoom-up-down"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:pl-10 justify-center  "
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:pl-10 justify-center container  "
         >
           {portfolios.map(({ id, src, link, repo }) => (
             <div

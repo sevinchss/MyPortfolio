@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <main className="bg-primary text-secondary font-forum duration-300 -mt-44 ">
-      <section className=" text-center lg:text-start ">
+      <section className=" container text-center lg:text-start ">
         <div className="relative flex justify-around t lg:flex-row flex-col   ">
           <div
             data-aos="fade-right"
@@ -106,8 +106,8 @@ const Home = () => {
             className="lg:pt-56 "
           />
         </div>
-        <hr className="mt-5" />
       </section>
+        <hr className="mt-5" />
 
       <section
         id="content-section"
@@ -162,7 +162,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center  lg:py-8">
+        <div className="flex justify-center  lg:pt-8">
           <div className="flex  items-center mt-5">
             <span className="w-24 h-[2px] bg-secondary"></span>
             <span className="bg-secondary w-fit text-primary p-2 px-5 text-xl rounded-md">
@@ -172,11 +172,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full  " data-aos="zoom-in" data-aos-duration="1000">
+        <div className="w-full container  " data-aos="zoom-in" data-aos-duration="1000">
           <Marquee
             gradient={false}
             speed={80}
-            pauseOnHover={true}
             pauseOnClick={true}
             delay={0}
             play={true}
@@ -184,7 +183,7 @@ const Home = () => {
           >
             {skillsData.map((skill, id) => (
               <div
-                className="w-36  h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+                className="w-36  h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-10 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
                 key={id}
               >
                 <div className="h-full w-full rounded-lg border border-[#1f223c] bg-secondary shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
@@ -213,7 +212,7 @@ const Home = () => {
       </section>
 
       <Portfolio />
-      <div id="contact" className="container  relative pt-10 text-text">
+      <div id="contact" className="container  relative mt-10 text-text">
         <div
           data-aos="zoom-in"
           data-aos-duration="1000"

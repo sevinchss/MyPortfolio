@@ -46,9 +46,9 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-backround  w-full md:h-screen portfolio"
+      className="bg-backround  w-full  portfolio"
     >
-      <div className="lg:mt-44 md:mt-96  p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="lg:mt-20  p-4 mx-auto flex flex-col justify-center w-full">
         <div className="sticky top-10">
           <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
           <div className="flex items-center justify-start relative">
@@ -63,7 +63,7 @@ const Portfolio = () => {
         <div
           data-aos="zoom-out"
           data-aos-duration="1000"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:pl-10 justify-center "
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-20 lg:pl-10 justify-center container"
         >
           {portfolios.map(({ id, src, link, repo }) => (
             <div
