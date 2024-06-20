@@ -43,12 +43,24 @@ const getDescription = (pathname) => {
 };
 function App() {
   const { pathname } = useLocation();
+ 
   useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 700,
-      easing: "ease-out-cubic",
-    });
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
+    const loadAOS = async () => {
+      const AOS = await import("aos");
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: function () {
+          var maxWidth = 800;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    };
+    loadAOS();
   }, []);
   return (
     <>

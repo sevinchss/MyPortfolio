@@ -5,9 +5,7 @@
 * {
   font-family: "League Spartan", sans-serif;
 }
-body {
-  overflow-x: hidden;
-}
+
 @layer base {
   :root {
     --primary: #323C64;

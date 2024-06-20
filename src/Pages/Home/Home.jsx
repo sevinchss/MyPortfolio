@@ -61,7 +61,7 @@ const Home = () => {
             data-aos-duration="1000"
             className="flex flex-col gap-3 font-Raleway lg:w-[500px] lg:px-0 px-5  lg:pt-72 m-0 pt-56"
           >
-            <h1 className="lg:text-6xl w-full text-5xl lg:w-[500px]   font-bold text-inf">
+            <h1 className="lg:text-6xl w-full lg:text-start text-center text-5xl lg:w-[500px]   font-bold text-inf">
               {t("hero.h1")}
             </h1>
             <h1 className="lg:w-[500px] text-4xl m-0 text-type">
@@ -111,7 +111,7 @@ const Home = () => {
 
       <section
         id="content-section"
-        className="my-12 lg:my-16 relative container flex flex-col-reverse gap-10 items-center lg:flex-row lg:items-start justify-between text-center lg:text-start py-10 "
+        className="my-12 lg:my-16 relative container flex flex-col gap-10 items-center lg:flex-row lg:items-start justify-between text-center lg:text-start py-10 "
       >
         <div className="hidden lg:flex flex-col items-center absolute top-20 -right-8">
           <span className="bg-secondary  w-fit text-primary rotate-90 p-2 px-5 text-xl rounded-md">
@@ -126,7 +126,7 @@ const Home = () => {
             data-aos-duration="1000"
             src="https://ik.imagekit.io/sardorovnasss/portfolio/istockphoto-1306190794-612x612-removebg-preview.png?updatedAt=1717591522866"
             alt="Sevinch"
-            className=" rounded-full bg-blue-gray-100 w-[450px] h-[400px] transition-all duration-1000 grayscale-0 hover:grayscale-0 hover:scale-110 cursor-pointer"
+            className=" rounded-full bg-blue-gray-100 lg:w-[450px] lg:h-[400px] transition-all duration-1000 grayscale-0 hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
           <div
             className="flex flex-col gap-8"
