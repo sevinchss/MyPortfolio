@@ -63,12 +63,12 @@ const Portfolio = () => {
         <div
           data-aos="zoom-out"
           data-aos-duration="1000"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-20 lg:pl-10 justify-center container"
+          className="flex flex-row flex-wrap w-full gap-20 lg:pl-10 justify-center container"
         >
           {portfolios.map(({ id, src, link, repo }) => (
             <div
               key={id}
-              className="shadow-md shadow-gray-600 rounded-lg lg:w-[380px] lg:h-[300px] "
+              className="shadow-md shadow-gray-600 rounded-lg lg:w-[330px] lg:h-[300px] "
             >
               <img
                 src={src}

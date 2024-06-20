@@ -55,7 +55,7 @@ function App() {
         duration: 600,
         once: true,
         disable: function () {
-          var maxWidth = 900;
+          var maxWidth = 400;
           return window.innerWidth < maxWidth;
         },
       });
