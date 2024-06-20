@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "League Spartan", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+@layer base {
+  :root {
+    --primary: #323C64;
+    --secondary: #B0CEF5;
+    --text: #ffffff;
+    --inf: #C7D9F1;
+    --type: #22B9DE;
+    --read: #FD7258;
+    --quotes: #ffffff;
+    --social: #7093a4;
+  }
+
+  .dark {
+    --primary: #B0CEF5;
+    --type: #284a74;
+    --read: #E8A227;
+    --quotes: #16253d;
+    --secondary: #323C64;
+    --text: #ffffff;
+    --inf: #9A3E2B;
+    --social: #151b31;
+
+  }
+}
