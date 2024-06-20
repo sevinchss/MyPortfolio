@@ -24,7 +24,7 @@ const Header = () => {
     <header data-aos="zoom-in-right"
       className="bg-primary font-spartan text-lg text-text sticky shadow-lg py-8 top-0 z-10 duration-300"
     >
-      <div className="container h-10 flex items-center justify-between sticky z-10">
+      <div className="container h-10 flex items-center justify-between ">
         <h1 className="font-julia text-5xl">
           <Link to="/" data-aos="zoom-out">
             <img
