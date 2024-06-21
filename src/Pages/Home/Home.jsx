@@ -54,8 +54,8 @@ const Home = () => {
 
   return (
     <main className="bg-primary text-secondary font-forum duration-300 -mt-44 ">
-      <section className=" container text-center lg:text-start ">
-        <div className="relative flex justify-around t lg:flex-row flex-col   ">
+      <section className=" container text-center lg:text-start">
+        <div className="flex justify-around lg:flex-row flex-col">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -85,7 +85,7 @@ const Home = () => {
             </p>
             <div className="flex gap-3 flex-row lg:justify-normal  justify-center ">
               <button
-                className="text-red hover:before:bg-redborder-red-500 relative h-10 w-32 overflow-hidden border border-red-500 bg-white px-3 text-red-500 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 rounded-lg before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+                className="text-red hover:before:bg-redborder-red-500 relative h-10 w-32 overflow-hidden border border-red-500 bg-transparent px-3 text-red-500 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 rounded-lg before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
                 onClick={scrollToContent}
               >
                 <span className="relative z-10">{t("hero.btn1")}</span>
@@ -102,8 +102,7 @@ const Home = () => {
             data-aos-duration="1000"
             src="https://ik.imagekit.io/sardorovnasss/portfolio/photo_2024-06-04_13-32-05-removebg-preview%20(1).png?updatedAt=1717490082588"
             alt="profile"
-            width={600}
-            className="lg:pt-56 "
+            className="lg:pt-56 w-1/2"
           />
         </div>
       </section>
@@ -137,7 +136,7 @@ const Home = () => {
               <p className=" mb-5 text-secondary text-xl font-bold uppercase">
                 {t("hero.h1")}
               </p>
-              <p className="text-quotes text-sm lg:text-xl lg:w-[500px]">
+              <p className="text-quotes text-sm lg:text-xl lg:w-full">
                 {t("hero.p")}
               </p>
             </div>
