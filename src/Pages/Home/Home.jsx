@@ -102,7 +102,7 @@ const Home = () => {
             data-aos-duration="1000"
             src="https://ik.imagekit.io/sardorovnasss/portfolio/photo_2024-06-04_13-32-05-removebg-preview%20(1).png?updatedAt=1717490082588"
             alt="profile"
-            className="lg:pt-56 w-1/2"
+            className="lg:pt-56 lg:w-1/2"
           />
         </div>
       </section>
