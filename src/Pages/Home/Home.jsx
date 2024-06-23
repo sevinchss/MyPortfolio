@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
-import Marquee from "react-fast-marquee";
 import { useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
-import * as yup from "yup";
 import { Typewriter } from "react-simple-typewriter";
 import { skillsData } from "../data/skills";
 import { skillsImage } from "../data/skill-image";
-import Portfolio from "../Portfolio";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ErrorMessage } from "@hookform/error-message";
+import emailjs from "@emailjs/browser";
+import Portfolio from "../Portfolio";
+import Marquee from "react-fast-marquee";
+import * as yup from "yup";
 
 const Home = () => {
   const scrollToContent = () => {
@@ -85,7 +85,7 @@ const Home = () => {
             </p>
             <div className="flex gap-3 flex-row lg:justify-normal  justify-center ">
               <button
-                className="text-red hover:before:bg-redborder-red-500 relative h-10 w-32 overflow-hidden border border-red-500 bg-transparent px-3 text-red-500 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 rounded-lg before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+                className="text-red hover:before:bg-redborder-red-500 relative h-10 w-32 overflow-hidden border border-red-500 bg-transparent z-[1] px-3 text-red-500 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 rounded-lg before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
                 onClick={scrollToContent}
               >
                 <span className="relative z-10">{t("hero.btn1")}</span>
@@ -93,7 +93,7 @@ const Home = () => {
               <button
                 className="text-text  bg-[#147087] border border-[#147087] duration-300 hover:text-[#147087] hover:bg-transparent  px-4 w-32 rounded-lg h-10"
               >
-                 <a href="/contact">{t("hero.btn2")}</a>
+                <a href="/contact">{t("hero.btn2")}</a>
               </button>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Home = () => {
           />
         </div>
       </section>
-        <hr className="mt-5" />
+      <hr className="mt-5" />
 
       <section
         id="content-section"

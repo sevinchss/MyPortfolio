@@ -43,7 +43,7 @@ const getDescription = (pathname) => {
 };
 function App() {
   const { pathname } = useLocation();
- 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -55,9 +55,10 @@ function App() {
         duration: 600,
         once: true,
         disable: function () {
-          var maxWidth = 400;
+          var maxWidth = 900;
+          console.log(window.innerWidth < maxWidth);
           return window.innerWidth < maxWidth;
-        },
+        }
       });
     };
     loadAOS();
