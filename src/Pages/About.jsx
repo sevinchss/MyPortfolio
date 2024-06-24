@@ -1,8 +1,23 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaHandPointRight } from "react-icons/fa";
 
 const About = () => {
   var { t } = useTranslation("Home");
+  useEffect(() => {
+    const loadAOS = async () => {
+      const AOS = await import("aos");
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: function () {
+          var maxWidth = 500;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    };
+    loadAOS();
+  }, []);
   return (
     <main className="bg-primary text-secondary  ">
       <section className=" flex flex-col items-center xl:flex-row xl:items-center  justify-between text-center xl:text-start">

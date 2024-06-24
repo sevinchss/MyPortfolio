@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { t } = useTranslation("Home");
-
+  useEffect(() => {
+    const loadAOS = async () => {
+      const AOS = await import("aos");
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: function () {
+          var maxWidth = 500;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    };
+    loadAOS();
+  }, []);
   const portfolios = [
     {
       id: 1,

@@ -12,6 +12,20 @@ import Marquee from "react-fast-marquee";
 import * as yup from "yup";
 
 const Home = () => {
+  useEffect(() => {
+    const loadAOS = async () => {
+      const AOS = await import("aos");
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: function () {
+          var maxWidth = 500;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    };
+    loadAOS();
+  }, []);
   const scrollToContent = () => {
     document
       .getElementById("content-section")
@@ -51,7 +65,6 @@ const Home = () => {
       );
   };
 
-
   return (
     <main className="bg-primary text-secondary font-forum duration-300 -mt-44 ">
       <section className=" container text-center lg:text-start">
@@ -90,9 +103,7 @@ const Home = () => {
               >
                 <span className="relative z-10">{t("hero.btn1")}</span>
               </button>
-              <button
-                className="text-text  bg-[#147087] border border-[#147087] duration-300 hover:text-[#147087] hover:bg-transparent  px-4 w-32 rounded-lg h-10"
-              >
+              <button className="text-text  bg-[#147087] border border-[#147087] duration-300 hover:text-[#147087] hover:bg-transparent  px-4 w-32 rounded-lg h-10">
                 <a href="/contact">{t("hero.btn2")}</a>
               </button>
             </div>
@@ -151,7 +162,8 @@ const Home = () => {
 
       <section
         id="skills"
-        className="relative  border-t my-12 lg:my-24 border-[#25213b]" data-aos="fade-up"
+        className="relative  border-t my-12 lg:my-24 border-[#25213b]"
+        data-aos="fade-up"
       >
         <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
@@ -171,7 +183,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full container  " data-aos="zoom-in" data-aos-duration="1000">
+        <div
+          className="w-full container  "
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <Marquee
             gradient={false}
             speed={80}

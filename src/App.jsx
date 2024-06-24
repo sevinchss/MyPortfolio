@@ -55,10 +55,9 @@ function App() {
         duration: 600,
         once: true,
         disable: function () {
-          var maxWidth = 900;
-          console.log(window.innerWidth < maxWidth);
+          var maxWidth = 500;
           return window.innerWidth < maxWidth;
-        }
+        },
       });
     };
     loadAOS();

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as yup from "yup";
 import { ErrorMessage } from "@hookform/error-message";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -8,6 +8,20 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { t } = useTranslation("Home");
+  useEffect(() => {
+    const loadAOS = async () => {
+      const AOS = await import("aos");
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: function () {
+          var maxWidth = 500;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    };
+    loadAOS();
+  }, []);
   const form = useRef();
   const validation = yup.object().shape({
     user_name: yup.string().required("First Name is required"),
