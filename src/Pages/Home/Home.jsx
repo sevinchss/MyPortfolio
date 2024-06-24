@@ -78,11 +78,11 @@ const Home = () => {
               {t("hero.h1")}
             </h1>
             <h1 className="lg:w-[500px] text-4xl m-0 text-type">
-              {t("hero.h1_type")}{" "}
+              {t("hero.h1_type")}
               <span style={{ fontWeight: "bold" }} className="">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
-                  words={["Coder", "Frontend Developer", "Programmer"]}
+                  words={[" Coder", " Frontend Developer", " Programmer"]}
                   loop
                   cursor
                   cursorStyle="|"
@@ -284,7 +284,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="text-base">Mesage </label>
+                  <label className="text-base">Message </label>
                   <textarea
                     className=" text-black placeholder-secondary text-secondary bg-primary w-full border rounded-md border-secondary focus:border-text ring-0 outline-0 transition-all duration-300 px-3 py-2"
                     name="message"

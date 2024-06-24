@@ -35,7 +35,7 @@ var en = {
     contact: {
       h1:"Contact",
     p:" Contact with me",
-    p1:" If you have any questions or concerns, please don't hesitate tocontact me. I am open to any work opportunities that align with my skills and interests.",
+    p1:" If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.",
     input1:"Your Name:",
     input2:"Your email",
     btn:"Send message",
