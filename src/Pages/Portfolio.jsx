@@ -41,6 +41,16 @@ const Portfolio = () => {
       link: "https://easy-bank-pied.vercel.app/",
       repo: "https://github.com/sevinchss/Easy_bank",
     },
+    {
+      id: 7,
+      src: "https://ik.imagekit.io/sardorovnasss/portfolio/photo_2025-01-04_20-01-10.jpg?updatedAt=1736002884820",
+      link: "https://www.smileboutique.uz/",
+    },
+    {
+      id: 8,
+      src: "https://ik.imagekit.io/sardorovnasss/portfolio/estelife.webp?updatedAt=1736003006685",
+      link: "https://este-life.vercel.app/",
+    },
   ];
 
   return (
@@ -65,7 +75,7 @@ const Portfolio = () => {
           data-aos-duration="1000"
           className="flex flex-row flex-wrap w-full gap-20 lg:pl-10 justify-center container"
         >
-          {portfolios.map(({ id, src, link, repo }) => (
+          {portfolios.map(({ id, src, link }) => (
             <div
               key={id}
               className="shadow-md shadow-gray-600 rounded-lg lg:w-[330px]"
@@ -82,12 +92,7 @@ const Portfolio = () => {
                 >
                   Demo
                 </button>
-                <button
-                  className="lg:w-1/2 px-6 py-2 duration-200 hover:scale-105"
-                  onClick={() => window.open(repo, "_blank")}
-                >
-                  GitHub
-                </button>
+               
               </div>
             </div>
           ))}
